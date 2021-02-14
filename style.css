@@ -1,0 +1,201 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* fonts */
+
+body{
+    width: 100%;
+    min-height: 100vh;font-family: 'Truculenta', sans-serif;
+    background: #fd79a8;
+}
+
+
+header{
+    width: 100%;
+    /* position: fixed;
+    top: 0;
+    left: 0;
+    right: 0; */
+    padding: 5px 0;
+  text-align: center;
+  z-index: 111;
+}
+
+header .logo{
+    max-width: 200px;
+    margin-left: 50%;
+   padding: 10px 0;
+transform: translateX(-50%);
+
+
+}
+header .logo img{
+    max-width: 100%;
+}
+.notice{
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%); */
+    z-index: 11111111;
+    min-width: 350px;
+    width: 50%;
+   margin-top: 150px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    transform: scale();
+}
+
+.notice{
+    background: coral;
+    padding: 25px 35px;
+    text-align: center;
+    cursor: pointer;
+}
+.notice h4{
+    font-size: 30px;
+    font-weight: bold;
+
+}
+
+
+@keyframes bump{
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.5);
+    }
+    100% {
+        transform: scale(0);
+    }
+}
+
+#snowflakeContainer {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    display: none;
+  }
+
+  .snowflake {
+    position: fixed;
+    background-color: #CCC;
+    user-select: none;
+    z-index: 1000;
+    pointer-events: none;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+  }
+
+
+  .send{
+      width: 75%;
+      margin: 50px auto;
+      text-align: center;
+      background-color: darkgoldenrod;
+      padding: 45px 25px;
+      position: relative;
+      /* overflow: hidden; */
+  }
+
+  .send h4{
+      font-size: 34px;
+      letter-spacing: 0.5px;
+      line-height: 1.3;
+  }
+/* 
+
+  .send::before{
+      content: "Send";
+      position: absolute;
+      top: -8px;
+      left: -8px;
+      padding: 5px 10px;
+      transform: rotate(-45deg);
+      background: pink;
+  } */
+
+
+  .send form{
+      padding: 25px 10px;
+  }
+
+
+  .send form label{
+      display: block;
+      font-size: 18px;
+      font-weight: bold;
+      padding-bottom: 8px;
+  }
+
+  .single-box{
+      margin-bottom: 25px;
+  }
+
+  input[type="text"]{
+      padding: 12px 5px;
+      border: 3px solid pink;
+      background: rgb(146, 54, 69);
+      color: #fff;
+      outline: none;
+      border-radius: 5px;
+      /* min-width: 285px; */
+  }
+
+
+  #submit{
+      padding: 12px 18px;
+      background: rgb(97, 11, 54);
+      color: #fff;
+      text-transform: capitalize;
+      font-weight: bold;
+      font-size: 22px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+
+  }
+
+
+  .get-wished{
+      width: 95%;
+      max-width: 950px;
+      margin: 50px auto;
+      display: flex;
+      background: rgb(49, 129, 129);
+      padding: 8px;
+      border-radius: 15px;
+  }
+  img{
+      max-width: 100%;
+  }
+
+  .ted{
+      max-width: 280px;
+  }
+  .message{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-grow: 1;
+
+  }
+  .message p {
+      font-size: 28px;
+      text-align: center;
+      color: #fff;
+
+  }
+  .message p span{
+      display: block;
+      padding: 5px;
+      font-weight: bolder;
+      font-size: 34px;
+      text-align: left;
+  }
